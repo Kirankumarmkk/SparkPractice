@@ -1,0 +1,119 @@
+Lines in RDD :3
+Window RDD size:3
+Lines in RDD :5
+Window RDD size:8
+Lines in RDD :3
+Window RDD size:11
+Lines in RDD :4
+Window RDD size:12
+Lines in RDD :4
+Window RDD size:11
+Lines in RDD :3
+Window RDD size:11
+Lines in RDD :4
+Window RDD size:11
+Lines in RDD :2
+Window RDD size:9
+Lines in RDD :3
+Window RDD size:9
+Lines in RDD :2
+Window RDD size:7
+Lines in RDD :6
+Window RDD size:11
+Lines in RDD :2
+Window RDD size:10
+Lines in RDD :3
+Window RDD size:11
+Lines in RDD :2
+Window RDD size:7
+Lines in RDD :5
+Window RDD size:10
+Lines in RDD :2
+Window RDD size:9
+Lines in RDD :4
+Window RDD size:11
+Lines in RDD :3
+Window RDD size:9
+Lines in RDD :3
+Window RDD size:10
+Lines in RDD :4
+Window RDD size:10
+Lines in RDD :3
+Window RDD size:10
+Lines in RDD :2
+Window RDD size:9
+Lines in RDD :7
+Window RDD size:12
+Lines in RDD :3
+Window RDD size:12
+Lines in RDD :3
+Window RDD size:13
+Lines in RDD :3
+Window RDD size:9
+Lines in RDD :3
+Window RDD size:9
+Lines in RDD :6
+Window RDD size:12
+Lines in RDD :2
+Window RDD size:11
+Lines in RDD :3
+Window RDD size:11
+Lines in RDD :2
+Window RDD size:7
+Lines in RDD :6
+Window RDD size:11
+Lines in RDD :3
+Window RDD size:11
+Lines in RDD :2
+Window RDD size:11
+Lines in RDD :4
+Window RDD size:9
+Lines in RDD :4
+Window RDD size:10
+Lines in RDD :3
+Window RDD size:11
+Lines in RDD :2
+Window RDD size:9
+Lines in RDD :3
+Window RDD size:8
+Lines in RDD :4
+Window RDD size:9
+Lines in RDD :3
+Window RDD size:10
+Lines in RDD :5
+Window RDD size:12
+Lines in RDD :2
+Window RDD size:10
+Lines in RDD :2
+Window RDD size:9
+Lines in RDD :2
+Window RDD size:6
+Lines in RDD :5
+Window RDD size:9
+Lines in RDD :2
+Window RDD size:9
+Lines in RDD :4
+Window RDD size:11
+Lines in RDD :2
+Window RDD size:8
+Lines in RDD :6
+Window RDD size:12
+Lines in RDD :2
+Window RDD size:10
+Lines in RDD :5
+Window RDD size:13
+Lines in RDD :3
+Window RDD size:10
+Lines in RDD :3
+Window RDD size:11
+Lines in RDD :4
+Window RDD size:10
+Lines in RDD :2
+Window RDD size:9
+Lines in RDD :5
+Window RDD size:11
+Lines in RDD :4
+Window RDD size:11
+Lines in RDD :3
+Window RDD size:12
+Lines in RDD :3
