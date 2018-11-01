@@ -15,7 +15,7 @@ trait ConsoleLogger5 extends Logger5 {
 }
 
 class Account5 {
-  protected var balance = 0.0
+  protected var balance = 1000.00
 }
 
 abstract class SavingsAccount5 extends Account5 with Logger5 {
