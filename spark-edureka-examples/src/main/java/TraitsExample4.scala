@@ -15,13 +15,14 @@ trait ConsoleLogger5 extends Logger5 {
 }
 
 class Account5 {
-  protected var balance = 1000.00
+  protected var balance = 1000.0
 }
 
 abstract class SavingsAccount5 extends Account5 with Logger5 {
   def withdraw(amount: Double) {
     if (amount > balance) log("No Funds at all...!!")
     else balance -= amount
+    log("Funds :"+balance)
   }
 }
 

@@ -17,8 +17,17 @@ object Spark_Sql_Practice extends App {
   println("Loading data file :")
   val airline_Data = spContext.textFile("C:\\Kiran\\Big\\Scala\\Assignment\\540_m6_airports.csv")
   
+  val first_header = airline_Data.first
+  
+  println(first_header)
+  
   //Remove the first line (contains headers)
-  val dataLines = airline_Data.filter(x => !x.contains("AirportID"))
+  //val dataLines = airline_Data.filter(x => !x.contains("AirportID"))
+  val dataLines = airline_Data.filter(x => x!=first_header)
+  println(airline_Data.take(2).foreach(println))
+  
+  println("with out header \n \n \n")
+  println(dataLines.take(10).foreach(println))
   println(dataLines.count())
 
   import org.apache.spark.ml.linalg.{ Vector, Vectors }

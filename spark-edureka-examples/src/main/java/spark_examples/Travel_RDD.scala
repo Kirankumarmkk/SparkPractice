@@ -1,11 +1,19 @@
 package spark_examples
 
+import org.apache.log4j.Level
+import org.apache.log4j.Logger
+
 object Travel_RDD extends App {
 
   import common._
 
+  Logger.getLogger("org").setLevel(Level.ERROR)
+  Logger.getLogger("akka").setLevel(Level.ERROR)
+  
   val sc = SparkCommonUtils.spContext
 
+  val sqlContext = new org.apache.spark.sql.SQLContext(sc)
+  
   val file = sc.textFile("C:\\Kiran\\Big\\Scala\\Assignment\\TravelData.txt")
      
 case class travel(City_Pair:String,From:String,To:String,Prod_type:String,adult:Int,Senior:Int,Child:Int,youth:Int,infant:Int,timea:String,Timeb:String,air_price:Double,Car_price:Double,hotel_price:Double)
@@ -14,6 +22,12 @@ case class travel(City_Pair:String,From:String,To:String,Prod_type:String,adult:
 
 val travel_recs = file.map(r => r.split("\t")).map(r => (travel(r(0).trim.toString,r(1).trim.toString,r(2).trim.toString,r(3).trim.toString,r(4).trim.toInt,r(5).trim.toInt,r(6).trim.toInt,r(7).trim.toInt,r(8).trim.toInt,r(9).trim.toString,r(10).trim.toString,r(11).trim.toFloat,r(12).trim.toFloat,r(13).trim.toFloat)))
 
+import sqlContext.implicits._
+
+
+val DF = travel_recs.toDF
+
+println(DF.printSchema)
 
 val top_destination = travel_recs.map(x=>(x.To,1)).reduceByKey((x,y)=>(x+y)).map(_.swap).sortByKey(false)
 

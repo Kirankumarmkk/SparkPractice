@@ -1,0 +1,28 @@
+"""{
+			"_id": 98,
+			"_rev": 11299114,
+			"creation_date": "Thu Dec 01 08:12:11 EST 2016",
+			"last_update": null,
+			"hotelname": {
+							"last_purchase_date": null,
+							"length_of_last_stay": 0,
+							"number_of_past_bookings": 0,
+							"upcoming_stays": [
+												{
+												"hotel_name": "POR_B_HOTEL",
+												"details": [
+															{
+															"length_of_stay": "2",
+															"season": "Winter",
+															"reservation_status": "UPCOMING",
+															"booking_date": null,
+															"upcoming_reservation_date": null,
+															"arrival_date": "2017-11-09T00:00:00.520Z",
+															"departure_date": "2018-11-09T00:00:00.520Z"
+															}
+															]
+												}
+												],
+							"previous_stays": null
+							}
+			}"""
