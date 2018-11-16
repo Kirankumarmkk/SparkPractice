@@ -43,15 +43,13 @@ object xml_Complex extends App {
   
   val rdd = sc.parallelize(xml)
   
-  val rdd1 = rdd.map(x=>meascollecFile(x)).toDF.as[meascollec]
+  val rdd1 = rdd.map(x=>meascollecFile(x))
   
-  rdd1.createOrReplaceTempView("measure")
-
-    rdd1.show
-    
-  val measvalues_df = sq.sql("select measvalue,measvalue1 from measure lateral view explode(measvalues) mm as measvalue lateral view explode(measvalues) m1 as measvalue1") 
+  rdd1.collect.foreach(println)
   
- measvalues_df.show
+  //val measvalues_df = sq.sql("select measvalue,measvalue1 from measure lateral view explode(measvalues) mm as measvalue lateral view explode(measvalues) m1 as measvalue1") 
+  
+ //measvalues_df.show
   
     def measValuesList(n: Node): measvalues = {
       val measObjLdn = (n \ "@measObjLdn").text

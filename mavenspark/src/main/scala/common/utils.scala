@@ -35,6 +35,8 @@ object utils {
       .setMaster(masterURL)
       .set("spark.executor.memory", "2g")
       .set("spark.sql.shuffle.partitions", "2")
+      .set("spark.eventLog.enabled","false")
+      .set("spark.eventLog.dir","file:///c:/temp/Logs")
 
     sc = SparkContext.getOrCreate(conf)
 
